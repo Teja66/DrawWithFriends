@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact us | Draw Chat</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="scripts/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src="scripts/cufon-yui.js"></script>
+  <script type="text/javascript" src="scripts/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src="scripts/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src="scripts/cufon-replace.js"></script>
+	<script type="text/javascript" src="scripts/roundabout.js"></script>
+  <script type="text/javascript" src="scripts/roundabout_shapes.js"></script>
+  <script type="text/javascript" src="scripts/gallery_init.js"></script>
+  <!--[if lt IE 7]>
+  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+  <![endif]-->
+   <style>
+      #map-canvas {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+   <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+  function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(37.548271, -121.988571),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+          position : mylat
+        })
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+    	<h1>Draw With Friends</h1>
+      <nav>
+        <ul>
+        	<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="index1.html">Draw</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+	</header>
+  <!-- #gallery -->
+  <!--<section id="gallery">
+  	<div class="container">
+    	<ul id="myRoundabout">
+      	<li><img src="images/slide3.jpg" alt=""></li>
+        <li><img src="images/slide2.jpg" alt=""></li>
+        <li><img src="images/slide5.jpg" alt=""></li>
+        <li><img src="images/slide1.jpg" alt=""></li>
+        <li><img src="images/slide4.jpg" alt=""></li>
+      </ul>
+  	</div>
+  </section>-->
+  <!-- /#gallery -->
+  <div class="main-box">
+    <div class="container">
+      <div class="inside">
+        <div class="wrapper">
+        	<!-- aside -->
+          <aside>
+            <h2>Our <span>Contacts</span></h2>
+            <!-- .contacts -->
+            <ul class="contacts">
+            	<li><strong>Street:</strong>47561,NorthWestern Polytechnic</li>
+              <li><strong>City:</strong>Fremont</li>
+              <li><strong>State:</strong>CA</li>
+              <li><strong>Zip Code:</strong>94538</li>
+              <li><strong>Country:</strong>USA</li>
+              <li><strong>Telephone 1:</strong>(510)592-9688</li>
+              <li><strong>Fax:</strong>(510)657-8975</li>
+              <li><strong>Email:</strong><a href="#">admissions@npu.edu</a></li>
+            </ul>
+            <!-- /.contacts -->
+           
+            <div id="map-canvas"></div>
+          </aside>
+          <!-- content -->
+          <section id="content">
+            <article>
+            	<h2>Contact <span>Form</span></h2>
+              <form id="contacts-form" action="MAILTO:rupenrock@gmail.com" method="post" >
+                <fieldset>
+                  <div class="field">
+                    <label>Your Name:</label>
+                    <input type="text" value=""/>
+                  </div>
+                  <div class="field">
+                    <label>Your E-mail:</label>
+                    <input type="email" value=""/>
+                  </div>
+                  <div class="field">
+                    <label>Your Website:</label>
+                    <input type="url" value=""/>
+                  </div>
+                  <div class="field">
+                    <label>Your Message:</label>
+                    <textarea></textarea>
+                  </div>
+                  <div><a href="#" onclick="document.getElementById('contacts-form').submit()">Send Your Message!</a></div>
+                </fieldset>
+              </form>
+              
+            </article> 
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="container">
+    	<div class="wrapper">
+        <div class="fleft">&copy;2015 Best Team - Web Front End Development</div>
+        
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
+
+
+
+<form action="MAILTO:aparna.sanka@gmail.com" method="post" enctype="text/plain">

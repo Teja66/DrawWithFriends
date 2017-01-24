@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Draw With Friends connect</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/reset.css" type="text/css" media="all">
+  <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
+  <script type="text/javascript" src="scripts/jquery-1.4.2.min.js" ></script>
+  <script type="text/javascript" src="scripts/cufon-yui.js"></script>
+  <script type="text/javascript" src="scripts/Humanst521_BT_400.font.js"></script>
+  <script type="text/javascript" src="scripts/Humanst521_Lt_BT_400.font.js"></script>
+  <script type="text/javascript" src="scripts/roundabout.js"></script>
+  <script type="text/javascript" src="scripts/roundabout_shapes.js"></script>
+  <script type="text/javascript" src="scripts/gallery_init.js"></script>
+  <script type="text/javascript" src="scripts/cufon-replace.js"></script>
+  <!--[if lt IE 7]>
+    <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <script type="text/javascript" src="js/IE9.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+
+        <h1><a href="index.html">Draw With Friends</a></h1>
+      <nav>
+        <ul>
+		<li><a href="index.html" class="current">Home</a></li>
+			<li><a href="index1.html">Draw</a></li>
+           <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>  
+           
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <meta charset="utf-8" />
+    <title>Draw With Friends</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <style type="text/css">
+        
+span {
+    
+}
+
+#logo {
+    width:20em;
+    height: auto;
+}
+
+#content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.instructions {
+    font-size:2em;
+    width: 100%;
+    margin-top:0.5em;
+    margin-bottom:0.0em;
+    color:white;
+}
+
+.codebox {
+    width: 100%;
+    height: 3em;
+    text-align:center;
+    align-content: center;
+    color:darkblue;
+    font-size:1em;
+    border-radius:0.5em;
+    border-width:0.1em;
+    border-color:black;
+    border-style:solid;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#btn_connect {
+    margin-top: 2em;
+    width: 60%;
+    height: 3em;
+    text-align:center;
+    align-content: center;
+    color:black;
+    font-size:1em;
+    border-radius:0.5em;
+    border-width:0.1em;
+    border-color:#559955;
+    background-color:#BBFFBB;
+    border-style:solid;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+    #btn_connect:hover {
+        background-color:#BBEEBB;
+    }
+
+#footer {
+    position:absolute;
+    bottom: 1em;
+    width:100%;
+    
+}
+
+#footertext {
+    color:#111111;
+    text-align:center;
+    font-weight:normal;
+}
+
+a {
+    color:red;
+    text-decoration:none;
+}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!--<img id="logo" src="logo_text3.png" /><br />-->
+        <p class="instructions">Enter a room name</p><br />
+        <input id="txt_room" class="codebox" value="Room1" /><br />
+        <button id="btn_connect" onclick="btn_connect_pressed();">Connect</button>
+    </div>
+
+
+
+    <div id="footer">
+        <p id="footertext">
+        </p>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
